@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="form.css" />
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="sendEmail.js"></script>
     <title>Ahmed Hossam</title>
   </head>
   <body>
@@ -156,35 +153,38 @@
     <!-- Contact section  -->
 
     <section class="contact-section" id="contact">
-      <h1 class="contact-header">Let's work together</h1>
+      <h1 class="title">Let's work together</h1>
       <div class="contact-data">
         <div class="name-input">
           <span>FULL NAME *</span>
-          <input type="" placeholder="Enter Your Email ">
+          <input id="name" type="text" placeholder="Enter Your Email " required>
         </div>
+
         <div class="contact-data02">
           <div class="contact-mail">
             <span>Email *</span>
-            <input type="" name="" id="" placeholder="Enter Your Email">
+            <input type="email" id="email" placeholder="Enter Your Email" required>
           </div>
+
           <div class="contact-phone">
-            <span>Phone *</span>
-            <input type="" name="" id="" placeholder="Enter Number Phone">
+            <span>Phone</span>
+            <input type="text" id="phone" placeholder="Enter Number Phone">
           </div>
         </div>
+
         <div class="contact-textarea">
-          <span>Message</span>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your message here..."></textarea>
+          <span>Message *</span>
+          <textarea id="message" cols="30" rows="10" placeholder="Your message here..." required></textarea>
         </div>
         
           
-          <button type="submit" value="Submit" class="contact-submit">
+        <button type="submit" value="Submit" class="contact-submit" onclick="send()">
 
-            submit
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-          </button>
-          
+          submit
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </button>
 
+        <h4 class="send-check" id="send-check"></h4>
         
       </div>
     </section>
