@@ -2,11 +2,11 @@
 function send(){
 
     (function sendMail(){
-        emailjs.init("5Sjp1GfWIHDIxXrGQ")
+        emailjs.init("")
     })();
 
-    let SERVERID = "service_v73b6g9";
-    let TEMPLATEID = "template_xolix6p";
+    let SERVERID = "";
+    let TEMPLATEID = "";
     
     let contactUs = {
         name: document.getElementById('name').value,
