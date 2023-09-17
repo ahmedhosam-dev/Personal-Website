@@ -1,0 +1,32 @@
+@media (min-width:300px) and (max-width:600px) {
+   
+    section{
+        padding:0;
+    }
+    .contact-data{
+        width: 90%;
+        height: 73%;
+    }
+    .contact-data .contact-data02{
+        flex-direction: column;
+    }
+    .contact-data div .contact-mail, .contact-data div .contact-phone{
+        width: 95%;
+        padding: 8px;
+        height: 4rem;
+    }
+    .name-input{
+        height: 4rem;
+        
+    }
+    .navigation{
+        text-align: center;
+    }
+    header{
+        padding-left: 10px;
+    }
+    .contact-data .contact-data02{
+        width:100%
+        
+    }
+}
