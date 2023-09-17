@@ -2,11 +2,11 @@
 function send(){
 
     (function sendMail(){
-        emailjs.init("")
+        emailjs.init("SEC")
     })();
 
-    let SERVERID = "";
-    let TEMPLATEID = "";
+    let SERVERID = "SEC";
+    let TEMPLATEID = "SEC";
     
     let contactUs = {
         name: document.getElementById('name').value,
